@@ -1,3 +1,5 @@
+const _ = require('lodash')
+
 var records = [{
     MCV: 71,    // fL
     MCH: 24,    // pg
@@ -116,7 +118,7 @@ const redBloodCellIndices = (temp) => {
 //     return record
 // }
 
-var newArray = JSON.parse(JSON.stringify(records))
-
+// var newArray = JSON.parse(JSON.stringify(records)) // solution 1 take longer time
+var newArray = _.cloneDeep(records);    // solution 2 take shorter time
 let result = redBloodCellIndices(newArray)
-console.log(result,records)
+console.log(result, records)
