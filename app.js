@@ -121,4 +121,4 @@ const redBloodCellIndices = (temp) => {
 // var newArray = JSON.parse(JSON.stringify(records)) // solution 1 take longer time
 var newArray = _.cloneDeep(records);    // solution 2 take shorter time
 let result = redBloodCellIndices(newArray)
-console.log(result, records)
+console.log(result)

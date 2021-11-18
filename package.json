@@ -9,6 +9,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "lodash": "^4.17.21"
+    "jquery": "^3.6.0",
+    "jsdom": "^18.1.0",
+    "lodash": "^4.17.21",
+    "xhr2": "^0.2.1"
   }
 }
